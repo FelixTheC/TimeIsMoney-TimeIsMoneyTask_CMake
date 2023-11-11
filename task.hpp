@@ -22,6 +22,7 @@ public:
     void setClientName(const std::string &clientName) noexcept;
     void setTaskName(const std::string &taskName) noexcept;
     void setPricePerHour(const float &price = 0.00) noexcept;
+    [[ nodiscard ]] bool is_running() noexcept;
     QString getClientName() noexcept;
     QString getTaskName() noexcept;
     QString getCreatedAt() noexcept;

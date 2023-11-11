@@ -183,3 +183,8 @@ Task::getUsedClientNames() noexcept
     }
     return results;
 }
+
+bool Task::is_running() noexcept
+{
+    return isRunning;
+}
